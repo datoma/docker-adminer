@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  adminer:
+    image: datoma/adminer
+    container_name: adminer
+    environment:
+      - "MEMORY=1G"
+      - "UPLOADMAXFILE=4G"
+      - "POSTMAXFILE=6G"
+    ports:
+      - 8080:8080
+    restart: always
+
+  db:
+    image: mariadb
+    container_name: mariaDB
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    restart: always
+
