@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM alpine:latest
 
 LABEL maintainer="datoma - https://github.com/datoma"
 
