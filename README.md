@@ -4,7 +4,12 @@ adminer in docker container based on alpine
 ## Usage
     docker run --rm -p 8000:80 datoma/adminer
     docker run --rm -p 8000:80 -e MEMORY=1G -e UPLOADMAXFILE=4G -e POSTMAXFILE=6G datoma/adminer
-  
+
+## docker-compose
+- uses mariaDB
+- user: root
+- password: example
+
 ## Default Values
 | Param               | Default Value  |
 |---------------------|----------------|
